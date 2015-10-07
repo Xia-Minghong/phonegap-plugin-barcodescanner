@@ -487,8 +487,7 @@ namespace zxing {
     readers_.clear();
     bool tryHarder = hints.getTryHarder();
 
-    bool addOneDReader = hints.containsFormat(BarcodeFormat_UPC_E) ||
-                         hints.containsFormat(BarcodeFormat_UPC_A) ||
+    bool addOneDReader = hints.containsFormat(BarcodeFormat_UPC_A) ||
                          hints.containsFormat(BarcodeFormat_EAN_8) ||
                          hints.containsFormat(BarcodeFormat_EAN_13) ||
                          hints.containsFormat(BarcodeFormat_CODE_128) ||
