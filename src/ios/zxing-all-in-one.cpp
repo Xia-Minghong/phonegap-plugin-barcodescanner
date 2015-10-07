@@ -7780,7 +7780,8 @@ namespace zxing {
           hints.containsFormat(BarcodeFormat_EAN_8) ||
           hints.containsFormat(BarcodeFormat_UPC_A) ||
           hints.containsFormat(BarcodeFormat_UPC_E)) {
-        readers.push_back(Ref<OneDReader>(new MultiFormatUPCEANReader(hints)));
+        //readers.push_back(Ref<OneDReader>(new MultiFormatUPCEANReader(hints)));
+        readers.push_back(Ref<OneDReader>(new Code39Reader()));
       }
       if (hints.containsFormat(BarcodeFormat_CODE_39)) {
         readers.push_back(Ref<OneDReader>(new Code39Reader()));
